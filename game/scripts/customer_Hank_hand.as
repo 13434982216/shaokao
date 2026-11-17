@@ -1,0 +1,35 @@
+package
+{
+   import flash.display.MovieClip;
+   
+   [Embed(source="/_assets/assets.swf", symbol="symbol5741")]
+   public dynamic class customer_Hank_hand extends MovieClip
+   {
+      public function customer_Hank_hand()
+      {
+         var _loc1_:Boolean = true;
+         var _loc2_:Boolean = false;
+         if(!_loc2_)
+         {
+            super();
+            if(_loc1_)
+            {
+            }
+            §§goto(addr31);
+         }
+         addFrameScript(0,this.frame1);
+         addr31:
+      }
+      
+      internal function frame1() : *
+      {
+         var _loc1_:Boolean = true;
+         var _loc2_:Boolean = false;
+         if(!_loc2_)
+         {
+            stop();
+         }
+      }
+   }
+}
+

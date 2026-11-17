@@ -1,0 +1,41 @@
+package wingGame.data.customers
+{
+   import wingGame.data.CustomerDataFile;
+   import wingGame.data.CustomerOrder;
+   import wingGame.data.FoodData;
+   
+   public class CustomerSue extends CustomerDataFile
+   {
+      public function CustomerSue()
+      {
+         var _loc1_:Boolean = false;
+         var _loc2_:Boolean = true;
+         if(_loc2_)
+         {
+            super();
+         }
+      }
+      
+      override public function initCustomerData() : void
+      {
+         var _loc1_:Boolean = true;
+         var _loc2_:Boolean = false;
+         this.customerName = "Sue";
+         if(!_loc2_)
+         {
+            this.customerClipName = "Sue";
+            this.thumbColor = "dustyblue";
+            this.customerFirstGame = "Papa Louie";
+         }
+         this.customerOrder = new CustomerOrder();
+         this.customerOrder.addWings(FoodData.MEAT_WING,FoodData.SAUCE_BBQ,4,FoodData.DISTRO_LEFT);
+         if(!_loc2_)
+         {
+            this.customerOrder.addWings(FoodData.MEAT_STRIPS,FoodData.SAUCE_HONEYMUSTARD,4,FoodData.DISTRO_ALL);
+            this.customerOrder.addSide(FoodData.SIDE_CELERY,4,FoodData.DISTRO_RIGHT);
+         }
+         this.customerOrder.addDip(FoodData.DIP_AWESOMESAUCE);
+      }
+   }
+}
+
